@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rokkitt", serif;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(
+      116.82deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(78, 0, 139, 0.88) 100%
+    ),
+    linear-gradient(
+      243.18deg,
+      rgba(147, 0, 150, 0.71) 0%,
+      rgba(132, 0, 79, 0.65) 48.05%,
+      rgba(0, 35, 157, 0.8) 100%
+    );
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 2rem;
+  min-height: 10vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.armogan-main {
+  font-size: 3rem;
+  color: rgb(255, 238, 238);
+}
+
+.search-div {
+  display: flex;
+}
+
+.search {
+  text-align: center;
+  height: 3rem;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+svg {
+  margin: 0 1rem;
+}
+
+.main-div {
+  min-height: 80vh;
+  padding: 3rem 0;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30em;
+  height: 30em;
+  background-color: rgba(44, 255, 244, 0.514);
+  color: rgb(0, 0, 0);
+  border-radius: 3rem;
+}
+
+.city-name {
+  margin-bottom: 0rem;
+}
+
+.city-name span {
+  font-size: 3rem;
+}
+
+.city-name sup {
+  margin: 0.5rem;
+  color: rgb(59, 0, 0);
+  font-size: 1.5rem;
+}
+
+.city-temp {
+  font-size: 10rem;
+}
+
+.city-temp sup {
+  font-size: 5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info h3 {
+  text-align: center;
+}
+
+footer {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  color: white;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .armogan-main {
+    font-size: 2rem;
+  }
+
+  .search {
+    height: 2rem;
+    font-size: 0.8rem;
+    width: 8rem;
+  }
+
+  .search-div svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .city {
+    width: 20em;
+    height: 25em;
+  }
+
+  .city-name span {
+    font-size: 2rem;
+  }
+
+  .city-name sup {
+    font-size: 1rem;
+  }
+
+  .city-temp {
+    font-size: 6rem;
+  }
+
+  .city-temp sup {
+    font-size: 3rem;
+  }
+}
+
+
+/*testing*/
+
+.dark{
+  background-color: black;
+}
+
+.orange{
+  background-color: brown;
+}
